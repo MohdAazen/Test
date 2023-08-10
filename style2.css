@@ -1,0 +1,16 @@
+body{
+    background-color: #000000;
+}
+h1
+{
+    color: white;
+    font-family: 'Borel', cursive;
+}
+p{
+    color: green;
+    font-family: "consolas",sans-serif;
+    font-style: italic;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: wheat wavy underline;
+}
