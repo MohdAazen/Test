@@ -64,11 +64,91 @@ h1{
 }
 .box
 {
+    margin: 15px;
     width: 100px;
     height: 100px;
     border: solid;
     font-size: 40px;
+    text-align: center;
+    background: tomato;
+    float: left;
+}
+p{
+    clear: left;
+}
+
+
+#box1{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    position: sticky ;
+    top: 0px;
+}
+#box2{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    position: relative;
+    top: 100px;
+    left: 100px;
 }
 
 
 
+/*
+a:link
+{
+    color: grey;
+}
+a:visited
+{
+    color: rgb(177, 252, 101);
+}
+a:hover{
+color: lime ;
+}
+a:active{
+color: yellow ;
+}
+
+button:hover{
+    background-color: lightgray;
+}
+button:active{
+    background-color: red;
+}
+/* 
+li:nth-child(1)
+{
+    background-color: peru;
+} 
+
+li:nth-child(odd)
+{
+    background-color: rgb(185, 254, 231);
+}
+
+li:nth-child(even)
+{
+    background-color: rgb(0, 169, 169);
+}
+
+
+li:nth-child(2n)
+{
+    background-color: rgb(185, 254, 231);
+}
+
+#h1
+{
+    text-shadow: -3px -3px 3px gold, 3px 3px 0px silver;
+    padding: 20px;
+}
+#h1:hover{
+    box-shadow: 5px 5px 5px black , -5px -5px 5px gold;
+}
+
+*/
