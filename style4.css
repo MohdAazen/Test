@@ -8,18 +8,19 @@
     /* animation: mySlide;
     animation-play-state: running;
     animation-iteration-count: infinite;
-    animation-delay: 0s;
+    
     animation-timing-function: linear;
-    animation-duration:  5s; */
-    animation: 3s linear 0s infinite running myColorChange;
+    animation-duration:  5s;
+    animation-delay: 0s; */
+    animation: 10s linear 5s infinite running myColorChange;
 
 }
-#box1:hover
+/* #box1:hover
 {
 }
 #box1:active
 {
-}
+} */
 
 @keyframes mySlide {
     from{
@@ -35,11 +36,11 @@
 }
 
 @keyframes myOpacity {
-50%{opacity: 0;}
+50%{opacity:0;}
 }
 
 @keyframes myScale{
-50%{transform:scale(.05,.05);}
+50%{transform:scale(0.5,0.5);}
 }
 
 

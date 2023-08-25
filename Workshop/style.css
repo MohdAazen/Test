@@ -1,0 +1,53 @@
+/* *
+{
+    background-color: aquamarine;
+} */
+html{
+    height: 100%;
+}
+
+
+h1{
+    background-color: yellow;
+}
+#aazen
+{
+    background-color: blue;
+}
+.t1{
+    background-color: blueviolet;
+    font-size: 10px;
+}
+
+#box1{
+    width: 250px;
+    height: 250px;
+    background-color: blanchedalmond;
+}
+#box2{
+    border:3px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: blanchedalmond;
+    
+}
+.b2{
+    float:left;
+    margin-left: 300px;
+}
+
+#main
+{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+@keyframes myColorChange{
+    0%{background-color: violet;}
+    20%{background-color: indigo;}
+    40%{background-color: blue;}
+    60%{background-color: green;}
+    80%{background-color: yellow;}
+    100%{background-color: orange;}
+    }
