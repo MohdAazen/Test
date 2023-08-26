@@ -1,0 +1,72 @@
+body{
+    background:linear-gradient(to right ,purple,blueviolet,blue,silver) ;
+}
+.div{
+
+    border: 3px solid black;
+    width: 700px;
+    height:630px;
+    padding: 50px;
+    padding-top:10px;
+    background-color: rgb(244, 42, 79);
+    font-weight: bolder;
+    margin: 40px 0 0 350px;
+}
+div{
+    margin: 20px;
+    width: 700px;
+    height:50px;
+}
+
+.div3{
+    margin: 10px;
+    width: 450px;
+    height:40px;
+    float: right;
+}
+label{
+    font-size: 20px ;
+    width: 150px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+.all{
+    background-color: aliceblue;
+    width: 450px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    float: right;
+}
+.gen
+{
+    padding: 50px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.button{
+    background-color: aliceblue;
+    width: 650px;
+    padding: 10px;
+    margin: 0px auto;
+    margin: 3%;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+}
+.button:hover{
+    background-color: aliceblue;
+    width: 650px;
+    padding: 10px;
+    margin: 0px auto;
+    margin: 3%;
+    border: 3px solid black;
+    
+    font-weight: 900;
+}

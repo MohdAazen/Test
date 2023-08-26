@@ -6,10 +6,10 @@
     text-align: center;
 
     /* animation: mySlide;
-    animation-play-state: running;
-    animation-iteration-count: infinite;
+    /* animation-play-state: running; */
+    animation-iteration-count: 2;
     
-    animation-timing-function: linear;
+   /* animation-timing-function: linear;
     animation-duration:  5s;
     animation-delay: 0s; */
     animation: 10s linear 5s infinite running myColorChange;
