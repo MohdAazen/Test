@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color:rgb(146, 76, 120) ;
+            padding: 20px;
+            margin-top: 150px;
+        }
+        input{
+            width: 80%;
+            height: 30px;
+            background: none;
+        }
+
+        button
+        {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <input type="text" id="search">
+    <button type="button" onclick="check()">Check</button>
+    <h1 id="city_temp"></h1>
+    <h1 id="city_name"></h1>
+    <h1 id="wind_speed"></h1>
+    <h1 id="city_humidity"></h1>
+    </div>
+    
+
+    <script>
+        function check(){
+        city = document.getElementById("search").value
+        console.log(city)
+        apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=517526fa851bd6a21cc63d53ffc7c617`
+        fetch(apiUrl).then(response=>response.json()).then(data=>{
+            var temp = data.main.temp
+            var name = data.name
+            var humidity = data.main.humidity
+            var speed = data.wind.speed
+
+            document.getElementById("city_temp").innerText ="Temperature: "+ temp
+            document.getElementById("city_name").innerText ="City: "+ name
+            document.getElementById("city_humidity").innerText ="Humidity: "+ humidity
+            document.getElementById("wind_speed").innerText = "Wind Speed: "+speed
+        }).catch(error=>{
+                // If fails
+                console.log(error)
+        });
+    }
+    </script>
+</body>
+</html>

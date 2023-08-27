@@ -4,9 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .nameColor{
+            color:red;
+        }
+        .bg{
+            background-color: aqua;
+        }
+    </style>
 </head>
-<body>
+<body id="b" >
+    <!-- <input type="text" placeholder="Enter first number " id="num1" >
+    <input type="text" placeholder="Enter second number " id="num2" >
+    <button type="button" onclick="add()">Add</button>
+    <button type="button" onclick="sub()">sub</button>
+    <button type="button" onclick="mul()">mul</button>
+    <button type="button" onclick="div()">div</button> -->
+
+
+    <h1 id="name"></h1>
+    <h2 id="age"></h2>
+    <h3 id="rollno"></h3>
+
+    <button type="button" id="but1" onclick="colorChange()"> change</button>
+    <button type="button" id="but2" onclick="removeColor()"> remove</button>
+    <button type="button" id="but3" onclick="bgChange()"> bg change</button>
+
+    <!-- <h1 id="name1"></h1>
+    <h2 id="age1"></h2>
+    <h3 id="rollno1"></h3>
+
+    <h1 id="name2"></h1>
+    <h2 id="age2"></h2>
+    <h3 id="rollno2"></h3> -->
+
+    <!-- <h1 id="text">Hello Aazen</h1>
+    <button type="button" onclick="change()">Change</button> -->
     <script>
+
+        function colorChange()
+        {            
+            document.getElementById("name").setAttribute("class","nameColor")
+        }
+        function bgChange()
+        {            
+            document.getElementById("b").setAttribute("class","bg")
+        }
+    
+        function removeColor()
+        {            
+            document.getElementById("name").removeAttribute("class","nameColor")
+        }
+
+        let stud = [{name:"Aazen" ,age:"20" , rollno:"222460"},
+            {name:"Kalim" ,age:"20" , rollno:"122460"},
+            {name:"Sayyed" ,age:"20" , rollno:"322460"}]
+        name=document.getElementById("name").innerText=stud[0].name;
+        age=document.getElementById("age").innerText=stud[0].age;
+        gender=document.getElementById("rollno").innerText=stud[0].rollno;
+
+        
+
+        
+
+        
+        // console.log(name)
+        // console.log(age)
+        // console.log(gender)
+
+        // document.getElementById("name1").innerText=stud[1].name;
+        // document.getElementById("age1").innerText=stud[1].age;
+        // document.getElementById("rollno1").innerText=stud[1].rollno;
+
+        // document.getElementById("name2").innerText=stud[2].name;
+        // document.getElementById("age2").innerText=stud[2].age;
+        // document.getElementById("rollno2").innerText=stud[2].rollno;
+
+
+// age = document.getElementById("age");
+// rollno = document.getElementById("rollno");
+
+        // function change()
+        // {
+        //     name = document.getElementById("text").innerText="Hello Kalim"
+        //     console.log(name)
+        // }
+
+        // function add()
+        // {
+        // input1= document.getElementById("num1").value;
+        // input2= document.getElementById("num2").value;
+        // console.log(parseInt(input1)+parseInt(input2));
+        // }
+        // function sub()
+        // {
+        // input1= document.getElementById("num1").value;
+        // input2= document.getElementById("num2").value;
+        // console.log(parseInt(input1)-parseInt(input2));
+        // }
+        // function mul()
+        // {
+        // input1= document.getElementById("num1").value;
+        // input2= document.getElementById("num2").value;
+        // console.log(parseInt(input1)*parseInt(input2));
+        // }
+        // function div()
+        // {
+        // input1= document.getElementById("num1").value;
+        // input2= document.getElementById("num2").value;
+        // console.log(parseInt(input1)/parseInt(input2));
+        // }
+
         // var a =parseInt(prompt("Enter a num"))
         // if(a%2==0)
         // {
@@ -33,13 +141,40 @@
         // }
         // console.log(sum)
 
-        function add(a , b)
-        {
-            c = a+ b;
-            console.log(c)
-        }
+        // function add(a , b)
+        // {
+        //     c = a* b;
+        //     console.log(c)
+        // }
 
-        add(2,4);
+        
+        // let aa = 0
+        // for(let i=1;i<=5;i++)
+        // {
+        //     aa+=5
+        //     }
+        // console.log(aa)
+        // add(25,6);
+        
+        
+        // function add(a,b,c)
+        // {
+        //     console.log(a+b+c);
+        // }
+        // function sub(a,b,c)
+        // {
+        //     console.log(a-b-c);
+        // }
+        // function mul(a,b,c)
+        // {
+        //     console.log(a*b*c);
+        // }
+        // add(3,4,5)
+        // sub(13,4,5)
+        // mul(3,4,5)
+
+
+        
     </script>
 </body>
 </html>

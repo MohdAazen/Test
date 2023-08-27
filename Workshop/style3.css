@@ -1,5 +1,5 @@
 body{
-    background:linear-gradient(to right ,purple,blueviolet,blue,silver) ;
+    background:linear-gradient(to top ,white,silver) ;
 }
 .div{
 
@@ -8,7 +8,7 @@ body{
     height:630px;
     padding: 50px;
     padding-top:10px;
-    background-color: rgb(244, 42, 79);
+    background-color: rgb(152, 143, 145);
     font-weight: bolder;
     margin: 40px 0 0 350px;
 }
@@ -22,7 +22,7 @@ div{
     margin: 10px;
     width: 450px;
     height:40px;
-    float: right;
+    float: left;
 }
 label{
     font-size: 20px ;
@@ -42,11 +42,11 @@ label{
     margin-bottom: 10px;
     border: 2px solid black;
     border-radius: 5px;
-    float: right;
+    float: left;
 }
 .gen
 {
-    padding: 50px;
+    padding: 10px;
     margin-top: 15px;
     margin-left: 50px;
 }

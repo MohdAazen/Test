@@ -1,0 +1,14 @@
+.card-img-top
+{
+    width: 250px;
+    height: 250px;
+}
+.card{
+    margin: 50px;
+}
+.navbar-nav
+{
+    display:flex ;
+    flex-direction: column;
+    padding-left: 1200px;
+}
