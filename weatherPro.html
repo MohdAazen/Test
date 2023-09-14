@@ -6,41 +6,62 @@
     <title>Document</title>
     <style>
         body{
-            background-color: bisque;
-            width: 100vw;
-            height: 100vh;
+            background-color: #BCAAA4;
+            width: 90vw;
+            height: 90vh;
             display: flex;
             justify-content: center;
+            
         }
         .box{
-            width: 500px;
-            height: 500px;
-            background-color:rgb(146, 76, 120) ;
-            padding: 20px;
+            width: 600px;
+            height: 400px;
+            background-color:#BDBDBD ;
+            padding: 50px;
             margin-top: 150px;
+            border: 2px solid black;
+            border-radius: 30px;
         }
         input{
-            width: 80%;
-            height: 30px;
-            background: none;
+            width: 50%;
+            height: 50px;
+            background: white;
+            font-size: 40px;
+            padding: 5px; 
+            padding-left: 20px;
+            border:2px solid rgb(0, 0, 0) ;
+            border-radius: 10px;
         }
 
         button
         {
-            border-radius: 50%;
+            width: 40%;
+            height: 64px;
+            font-size: large;
+            border-radius: 10px;
+            
+        }
+        .row{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
         }
     </style>
 </head>
 <body>
     <div class="box">
-    <input type="text" id="search">
+        <div class="row">
+    <input type="text" id="search" >
     <button type="button" onclick="check()">Check</button>
+</div>
     <h1 id="city_temp"></h1>
     <h1 id="city_name"></h1>
     <h1 id="wind_speed"></h1>
     <h1 id="city_humidity"></h1>
     </div>
-    
+    <!-- (32°F − 32) × 5/9 -->
 
     <script>
         function check(){
@@ -53,7 +74,7 @@
             var humidity = data.main.humidity
             var speed = data.wind.speed
 
-            document.getElementById("city_temp").innerText ="Temperature: "+ temp
+            document.getElementById("city_temp").innerText ="Temperature: "+ parseInt(temp-273)+"°C"
             document.getElementById("city_name").innerText ="City: "+ name
             document.getElementById("city_humidity").innerText ="Humidity: "+ humidity
             document.getElementById("wind_speed").innerText = "Wind Speed: "+speed
