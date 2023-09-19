@@ -27,7 +27,7 @@
     text-align: center;
     background-color: aquamarine;
 
-    transform: translateX(50px);
+    /* transform: translateX(50px);
     transform: translateY(50px);
     transform: translate(50px,50px);
     transform: rotateX(180deg);
@@ -39,7 +39,7 @@
     transform: scale(2);
     transform: skewX(45deg);
     transform: skewY(45deg);
-    transform: skew(45deg,20deg);
+    transform: skew(45deg,20deg); */
 
-    transform: matrix(2,1,1,0,250,250);
+    /* transform: matrix(2,1,1,0,250,250); */
 }

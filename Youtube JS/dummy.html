@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div{
+            height:300px;
+            width:300px;
+            background-color:red ;
+        }
+        
+        p{
+            background-color: yellow;
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <p>Hello</p>
+    </div> -->
+    <button onclick="doSomething()">Click</button>
+<!-- Target the element for manipulating -->
+    <div class="one" id="one">
+        Hello Everyone
+    </div>
+    <script>
+function doSomething()
+{
+    // document.getElementById("one").innerHTML="<h1>Something new";
+
+        document.getElementById("one").style.height="300px";
+        document.getElementById("one").style.backgroundColor="Pink";
+        document.getElementById("one").style.transform="rotate(36000deg)"
+}
+
+    </script>
+</body>
+</html>

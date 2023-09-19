@@ -1,0 +1,75 @@
+        // let movie={
+        //     name: "Avengers Infinity War",
+        //     rating: 8.7,
+        //     poster:'https://rukminim2.flixcart.com/image/850/1000/ky90scw0/sticker/a/a/x/medium-avengers-infinity-war-decorative-for-poster-18-ps-32-original-imagagzvhmsudcfg.jpeg?q=90',
+        //     description:"Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos"
+        // }
+        // let movie1={
+        //     name: "RRR",
+        //     rating: 7.8,
+        //     poster:'https://www.themoviedb.org/t/p/original/hmDNYJkVdooSTNej2AnWV0nbH3q.jpg',
+        //     description:"Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos"
+        // }
+
+        // let movies =[
+        // {
+        //     name: "Avengers Infinity War",
+        //     rating: 8.7,
+        //     poster:'https://rukminim2.flixcart.com/image/850/1000/ky90scw0/sticker/a/a/x/medium-avengers-infinity-war-decorative-for-poster-18-ps-32-original-imagagzvhmsudcfg.jpeg?q=90',
+        //     description:"Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos"
+        // },
+        // {
+        //     name: "RRR",
+        //     rating: 7.8,
+        //     poster:'https://www.themoviedb.org/t/p/original/hmDNYJkVdooSTNej2AnWV0nbH3q.jpg',
+        //     description:"Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos"
+        // }
+        // ]
+
+        // console.log(movies);
+        // for(let i =0; i<movies.length;i++)
+        // {
+        //     console.log(movies[i].name);
+        //     console.log(movies[i].poster);
+        //     console.log(movies[i].rating);
+        //     console.log(movies[i].description);
+        // }
+
+// functions
+// A function is set of code to which we give a name which is never called automatically
+
+
+
+// doSomething();
+// console.log("Hello World");
+// doSomething();
+
+// doSomething=()=>console.log("Hello");
+
+// doSomething=()=>
+// {
+//     console.log("Hello");
+// }
+
+// console.log(a)
+// var a = 10;
+
+// doSomething("Aazen");
+// console.log("Hello World");
+// doSomething();
+
+// function doSomething(name)
+// {
+//     console.log("Hello "+name);
+// }
+
+
+// function dummy()
+// {
+//     if(true)
+//     {
+//         var a = 1;
+//     }
+//     console.log(a);
+// }
+// dummy();
