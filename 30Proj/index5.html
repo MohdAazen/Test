@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <h1 id="displaytime">00:00:00</h1>
+        <div class="buttons">
+            <img src="images/start.png" id="start" alt="start">
+            <img src="images/reset.png" alt="reset" onclick="watchReset()">
+        </div>
+    </div>
+
+    <script>
+        let [seconds,minutes,hours]=[0,0,0];
+        let displayTime = document.getElementById("displaytime");
+        let timer=null
+        let state = document.getElementById("start");
+
+
+        function stopwatch(){
+            seconds++;
+            if(seconds==60)
+            {
+                seconds=0;
+                minutes++;
+                if(minutes==60)
+                {
+                    minutes=0;
+                    hours++;
+                }
+            }
+            let h=hours<10?"0"+hours:hours;
+            let m=minutes<10?"0"+minutes:minutes;
+            let s=seconds<10?"0"+seconds:seconds;
+            
+            displayTime.innerHTML=h+":"+m+":"+s;
+        }
+        
+        function watchStart()
+        {
+            if(timer != null)
+            {
+                clearInterval(timer);
+            }
+            timer = setInterval(stopwatch,1000);
+            start.src="images/pause.png";
+        }
+
+        function watchStop()
+        {
+                clearInterval(timer);
+                start.src="images/start.png"
+        }
+
+        function watchReset()
+        {
+            clearInterval(timer);
+            [seconds,minutes,hours]=[0,0,0];
+            displayTime.innerHTML="00:00:00";
+            start.src="images/start.png"
+        }
+    </script>
+</body>
+</html>

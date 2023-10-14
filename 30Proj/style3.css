@@ -9,10 +9,31 @@ body{
     background-color: black;
 }
 
+.centre{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.gallery-wrap{
+    
+    /* background-color: #fff; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .gallery{
     width: 900px;
     display: flex;
-    overflow-x: scroll
+    overflow-x: scroll;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery div{
@@ -22,6 +43,7 @@ body{
     grid-gap: 20px;
     padding: 10px;
     flex:none;
+
 }
 
 .gallery div img{
@@ -34,13 +56,9 @@ body{
     display: none;
 }
 
-.gallery-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#back-btn, #next-btn{
+
+#back_btn, #next_btn{
     width: 50px;
     cursor: pointer;
     margin: 40px;

@@ -1,0 +1,81 @@
+/*  px -->fixed
+    block -->never goes side by side one below each other
+    inline --> goes side by side , cannot have height and width
+
+    flex --> x and y axis 
+    parent becomes flex and child becomes flex items
+    row-> x-main, y-cross    
+    
+    justify content works on main
+    align items works on cross
+
+    column-> y-main, x-cross
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.product{
+    width: 70%;
+    height: auto;
+    background-color: red;
+    padding: 50px;
+}
+.product-child{
+    width: 20%;
+    height: 100px;
+    background-color: yellow;
+    margin-bottom:20px;
+}
+.dummy-text
+{
+    background-color: #023c00;
+    padding: 2px;
+    margin: 5px;
+    width: 200px;
+    display: inline-block;
+}
+.parent{
+    width: 100%;
+    height: 700px;
+    background-color: lightgray;
+    display: flex; /* flex direction is row*/
+    justify-content: center;
+    align-items: center;
+
+    /* flex-wrap: wrap; */
+    /* column-gap: 50px;
+    row-gap: 50px; */
+    
+}
+
+.item
+{
+    width: 20%;
+    height: 150px;
+}
+
+.fitem{
+    background-color: #023c00;
+    display: flex;
+}
+.sitem{
+    background-color: #3c003c;
+
+}
+.titem{
+    background-color: #05003c;
+
+}
+.foitem{
+    background-color: #353c00;
+
+}
+
+.block{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
